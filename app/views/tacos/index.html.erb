@@ -1,0 +1,13 @@
+<h1>How do you like them tacos?</h1>
+
+<% # This is the syntax to embed ruby code
+  # Note: this is why the file is tagged .erb - stands for embedded ruby
+tacos = ["Carnitas", "Al Pastor", "Barbacoa"]
+%>
+
+<p>We have <%= tacos.length # To print something like this, need the "=" after the % %> tacos:</p>
+
+<ul>
+  <li>Carnitas</li>
+  <li>Al Pastor</li>
+</ul>
