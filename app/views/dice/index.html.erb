@@ -1,11 +1,20 @@
-<h2>Dovie'andi se tovya sagain</h2>
+<h1>Dovie'andi se tovya sagain</h1>
 
 <%
-die1 = rand(1..6)
-die2 = rand(1..6)
-dicetotal = die1 + die2
+  die1 = rand(1..6)
+  die2 = rand(1..6)
+  dicetotal = die1 + die2
 %>
 
-<p>You rolled <%= die1 %> and <%= die2 %>.</p>
+<p>
+<img src="images/dice/<%=die1%>.svg" alt="">
+<img src="images/dice/<%=die2%>.svg" alt="">
+</p>
+
+<!-- <p>You rolled <%= die1 %> and <%= die2 %>.</p> -->
 
 <p>Total is <%= dicetotal %>.</p>
+
+<p>
+  <a href="/dice">Roll Again</a>
+</p>
