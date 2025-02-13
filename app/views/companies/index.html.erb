@@ -1,0 +1,19 @@
+<h1>Companies</h1>
+
+<p>There are <%= Company.all.length %> companies:</p>
+
+<ul>
+  <% for company in Company.all %>
+    <li><a href="https://<%= company["name"] %>.com"><%= company["name"] %></a></li>
+  <% end %>
+</ul>
+
+<!-- Alternate method
+<% companies = Company.all %>
+
+<ul>
+  <% for company in companies %>
+    <li><%= company["name"] %></li>
+  <% end %>
+</ul>
+-->
